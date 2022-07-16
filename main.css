@@ -1,0 +1,260 @@
+
+/*font face declarations*/
+@font-face {
+    font-family: ubuntu;
+    src: url(./fonts/Ubuntu/Ubuntu-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(./fonts/Ubuntu/Ubuntu-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: ubuntu;
+    src: url(./fonts/Ubuntu/Ubuntu-Medium.ttf);
+    font-weight: medium;
+}
+/*end of font face declarations*/
+.centerbtn {
+    border: none;
+    border-radius: 24px;
+    background-color: #d35013;
+    padding: 20px;
+    color: #ffffff;
+    font-family: ubuntu;
+    font-weight: medium;
+    font-size: 15px;
+    justify-content: center;
+    transition-duration: .5s;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%)
+
+}
+
+.Msvg {fill:#6d6d6d;width:20px;height:20px;margin-right:8px;transition-duration:.5s;color: transparent;}
+
+svg#ctc {
+  fill: #ffffff;
+  margin-left: 8px;
+  width:20px;
+  height: 20px;
+}
+.container {
+z-index: 1;
+
+margin: 0 auto;
+height: auto;
+width: 100%;
+}
+body, html {
+height: 100%;
+margin: 0;
+}
+
+body{overflow: hidden;}
+
+h1#wel {
+    font-family: ubuntu;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 5px;
+}
+
+h1#wel:hover {
+    cursor: default;
+}
+
+.center {
+    text-align: center;
+    /*background-color: #ffffff;*/
+    border: none;
+    padding: 5px;
+    /*position: relative;*/
+    display:inline-block;
+    background-color: #2b2e46;
+    border-radius: 8px;
+    margin: 0 auto;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*filter:drop-shadow(10px 10px 5px);*/
+}
+.menu {
+  position: sticky;
+  width: 100%;
+  height: 10%;
+  justify-items: center;
+  justify-content: center;
+  background-color: #222436;
+  display: flex;
+  list-style-type: disc;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.Msvg#home {
+  fill:#d35013;
+  color: transparent;
+}
+a#homem span{
+  color: #b8b8b8;
+}
+.menubtn {
+  text-align: center;
+  padding: 20px;
+  border-radius: 100px;
+  position: relative;
+  /*top: 50%;*/
+  margin: 1%;
+  transition-duration: .5s;
+  display: flex;
+  align-items: center;
+}
+.menubtn span {
+  font-family: ubuntu;
+  font-weight: bold;
+  color:#6d6d6d;
+  transition-duration: .25s;
+}
+a{text-decoration: inherit;}
+.bgimg {
+width: 100%;
+height: 100%;
+background-color: grey;
+z-index: 0;
+border: none;
+position: absolute;
+background-position: center;
+background-size:cover;
+animation: image-change 30s infinite;
+}
+.blur {
+    filter: blur(5px);
+}
+/*animations*/
+.centerbtn:hover {
+    padding: 23px;
+    border-radius: 25px;
+    background-color: #d47042;
+    cursor: pointer;
+}
+
+
+/*START TOAST*/
+.toast {
+  position:absolute;
+  right:-5%;
+  bottom:2%;
+  background-color:#68e65d;
+  text-align: center;
+  display: none;
+  margin: 0 auto;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px 4px rgba(0,0,0,.5);
+}
+
+.toast.flyout {
+  animation: toastout .5s linear forwards;
+  display: flex;
+}
+
+.toast.flyin {
+  animation: toastin .5s linear forwards;
+  display:flex;
+}
+
+
+.toast:hover {
+  cursor: pointer;
+  background-color:#56b64e;
+}
+
+.toast span {
+  color: #ffffff;
+  font-family: ubuntu;
+  font-weight: normal;
+}
+.toast svg {
+  fill: #ffffff;
+  margin-left: 10px;
+  width:30px;
+  height:30px;
+}
+
+@keyframes toastin {
+  0% {opacity: 0; right: -5%}
+  100% {opacity: 1; right:1%;}
+}
+
+@keyframes toastout {
+  0% {display:flex;opacity: 1; right: 1%}
+  100% {display:none;opacity: 0; right:-5%;}
+}
+/*END TOAST*/
+/*THE TOAST IS ABOVE JUSSTTT READ*/
+/*^*/
+/*|*/
+/*|*/
+/*|*/
+.menubtn:hover {
+  background-color: #393c58;
+  cursor:pointer;
+}
+.menubtn:hover span {
+  color:#9b9b9b;
+}
+
+.menubtn:hover .Msvg {
+  fill:#9b9b9b;
+}
+
+.menubtn:hover .Msvg#discord {
+  fill:#406da2;
+}
+  
+body::after{
+  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+  content:url(images/coaster.png) url(images/coloseum.png) url(images/disco.png)url(images/elevator.png)url(images/grass.png)url(images/mtgroom.png)url(images/playingfloor.png)url(images/pool.png)url(images/room.png)url(images/waterpark.png)url(images/grass.png);
+}
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  
+  @keyframes image-change {
+    0% { background-image: url(images/coaster.png); }
+    10% { background-image: url(images/coloseum.png); }
+    20% { background-image: url(images/disco.png); }
+    30% { background-image: url(images/elevator.png); }
+    40% { background-image: url(images/grass.png); }
+    50% { background-image: url(images/mtgroom.png); }
+    60% { background-image: url(images/playingfloor.png); }
+    70% { background-image: url(images/pool.png); }
+    80% { background-image: url(images/room.png); }
+    90% { background-image: url(images/waterpark.png); }
+    100% { background-image: url(images/grass.png); }
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
