@@ -103,7 +103,7 @@ h1#wel:hover {
 }
 
 .Msvg#home {
-  fill:#d35013;
+   fill:#d35013;
   color: transparent;
 }
 a#homem span{
@@ -155,7 +155,7 @@ animation: image-change 30s infinite;
   position:absolute;
   right:-5%;
   bottom:2%;
-  background-color:#68e65d;
+  background-color:#50df43;
   text-align: center;
   display: none;
   margin: 0 auto;
@@ -178,7 +178,7 @@ animation: image-change 30s infinite;
 
 .toast:hover {
   cursor: pointer;
-  background-color:#56b64e;
+  background-color:#2fad23;
 }
 
 .toast span {

@@ -13,4 +13,8 @@ function copyToClipboard(element) {
     toast.classList.remove("flyin");
     toast.classList.add("flyout")
   }
+
+  function openlink(lk) {
+    window.open(lk, '_blank')
+  }
   //Array of images which you want to show: Use path you want.
