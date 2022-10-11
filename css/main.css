@@ -2,18 +2,18 @@
 /*font face declarations*/
 @font-face {
     font-family: ubuntu;
-    src: url(./fonts/Ubuntu/Ubuntu-Bold.ttf);
+    src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: ubuntu;
-    src: url(./fonts/Ubuntu/Ubuntu-Regular.ttf);
+    src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
     font-weight: normal;
 }
 @font-face {
     font-family: ubuntu;
-    src: url(./fonts/Ubuntu/Ubuntu-Medium.ttf);
+    src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf);
     font-weight: medium;
 }
 /*end of font face declarations*/
@@ -226,7 +226,7 @@ animation: image-change 30s infinite;
   
 body::after{
   position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-  content:url(images/coaster.png) url(images/coloseum.png) url(images/disco.png)url(images/elevator.png)url(images/grass.png)url(images/mtgroom.png)url(images/playingfloor.png)url(images/pool.png)url(images/room.png)url(images/waterpark.png)url(images/grass.png);
+  content:url(../images/coaster.png) url(../images/coloseum.png) url(../images/disco.png)url(../images/elevator.png)url(../images/grass.png)url(../images/mtgroom.png)url(../images/playingfloor.png)url(../images/pool.png)url(../images/room.png)url(../images/waterpark.png)url(../images/grass.png);
 }
   /* Fading animation */
   .fade {
@@ -241,17 +241,17 @@ body::after{
   
   
   @keyframes image-change {
-    0% { background-image: url(images/coaster.png); }
-    10% { background-image: url(images/coloseum.png); }
-    20% { background-image: url(images/disco.png); }
-    30% { background-image: url(images/elevator.png); }
-    40% { background-image: url(images/grass.png); }
-    50% { background-image: url(images/mtgroom.png); }
-    60% { background-image: url(images/playingfloor.png); }
-    70% { background-image: url(images/pool.png); }
-    80% { background-image: url(images/room.png); }
-    90% { background-image: url(images/waterpark.png); }
-    100% { background-image: url(images/grass.png); }
+    0% { background-image: url(../images/coaster.png); }
+    10% { background-image: url(../images/coloseum.png); }
+    20% { background-image: url(../images/disco.png); }
+    30% { background-image: url(../images/elevator.png); }
+    40% { background-image: url(../images/grass.png); }
+    50% { background-image: url(../images/mtgroom.png); }
+    60% { background-image: url(../images/playingfloor.png); }
+    70% { background-image: url(../images/pool.png); }
+    80% { background-image: url(../images/room.png); }
+    90% { background-image: url(../images/waterpark.png); }
+    100% { background-image: url(../images/grass.png); }
   }
 
   @keyframes fade {

@@ -1,0 +1,19 @@
+{
+  "name": "ccsite",
+  "version": "1.0.0",
+  "description": "commandercraftweb",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: IDK What the fuck to put here\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gamerdude7820/newccsite.git"
+  },
+  "author": "Tyler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gamerdude7820/newccsite/issues"
+  },
+  "homepage": "https://github.com/Gamerdude7820/newccsite#readme"
+}
