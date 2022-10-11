@@ -223,7 +223,7 @@ animation: image-change 30s infinite;
 .menubtn:hover .Msvg#discord {
   fill:#406da2;
 }
-  
+
 body::after{
   position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
   content:url(../images/coaster.png) url(../images/coloseum.png) url(../images/disco.png)url(../images/elevator.png)url(../images/grass.png)url(../images/mtgroom.png)url(../images/playingfloor.png)url(../images/pool.png)url(../images/room.png)url(../images/waterpark.png)url(../images/grass.png);
@@ -241,7 +241,8 @@ body::after{
   
   
   @keyframes image-change {
-    0% { background-image: url(../images/coaster.png); }
+    0% { background-image: url(../images/grass.png); }
+    3% { background-image: url(../images/coaster.png); }
     10% { background-image: url(../images/coloseum.png); }
     20% { background-image: url(../images/disco.png); }
     30% { background-image: url(../images/elevator.png); }
