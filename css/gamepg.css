@@ -185,6 +185,8 @@ h1#mainheading {
 
 .choice img {
   width:80%;
+  margin-left:15%;
+  margin-right:5%;
 }
 
 .choice h1 {
