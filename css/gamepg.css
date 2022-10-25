@@ -16,6 +16,11 @@
     src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf);
     font-weight: medium;
 }
+@font-face {
+  font-family: roundo;
+  src: url(../fonts/roundo/Regular.ttf);
+  font-weight: normal;
+}
 /*end of font face declarations*/
 /*svg declarations*/
 .Msvg {fill:#6d6d6d;width:20px;height:20px;margin-right:8px;transition-duration:.5s;color: transparent;}
@@ -175,18 +180,21 @@ h1#mainheading {
 .choice {
   box-sizing: border-box;
   width: 25%;
-  height: 60%;
+  height: 70%;
   color:#393c58;
   position:absolute;
   margin-top:7%;
-  background-color:#2c3152;
-  border-radius: 10%;
+  background-color:#262839;
+  border-radius: 50px;
 }
 
 .choice img {
-  width:80%;
-  margin-left:15%;
-  margin-right:5%;
+  width:75%;
+  left: 50%;
+  position:absolute;
+  border-radius:5%;
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
 }
 
 .choice h1 {
@@ -196,11 +204,50 @@ h1#mainheading {
   font-weight:medium;
 }
 
-div#mini {
-margin-left:50%;
+.choice p {
+  position:absolute;
+  text-align: center;
+  width:65%;
+  height:10%;
+  left: 50%;
+  top:70%;
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
 }
+
+.choice button {
+  position:absolute;
+  height:10%;
+  width:65%;
+  color:#ffffff;
+  background-color:#191b28;
+  font-family: Ubuntu;
+  font-weight: bold;
+  font-size:large;
+  border-radius: 15px;
+  border:none;
+  left: 50%;
+  top:85%;
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+
+.choice button:hover {
+  color:#d5d5d5;
+  background-color:#1b1d2d;
+}
+
 div#casino {
-  margin-left:10%;
+  left: 75%;
+  top:25%;
+  -ms-transform: translate(-75%, -25%);
+  transform: translate(-75%, -25%);
+}
+div#mini {
+  left: 25%;
+  top:25%;
+  -ms-transform: translate(-25%, -25%);
+  transform: translate(-25%, -25%);
 }
 
 
