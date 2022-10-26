@@ -181,7 +181,7 @@ h1#mainheading {
   box-sizing: border-box;
   width: 25%;
   height: 70%;
-  color:#393c58;
+  color:#3e4261;
   position:absolute;
   margin-top:7%;
   background-color:#262839;
@@ -235,6 +235,7 @@ h1#mainheading {
 .choice button:hover {
   color:#d5d5d5;
   background-color:#1b1d2d;
+  cursor:pointer;
 }
 
 div#casino {
